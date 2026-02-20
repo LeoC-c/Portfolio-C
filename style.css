@@ -308,6 +308,12 @@ input::placeholder, .hero_content_textarea::placeholder{
     transition: ease-in-out 0.16s;
 }
 
+#mobile_btn{
+    margin: 0px;
+    margin-top: -20px;
+}
+/* RIGHT SIDE */
+
 /* MEDIA SCREEN 1366 */
 
 @media screen and (max-width: 1366px) {
@@ -418,6 +424,12 @@ input::placeholder, .hero_content_textarea::placeholder{
 /* PHONE SCREEN (REFAZER) */
 
 @media (max-width: 767px) {
+
+
+#mobile_btn{
+    margin-bottom: 30px;
+     margin-top: 0px;
+}
 
     .hero_container{
         height: auto;
@@ -530,13 +542,15 @@ input::placeholder, .hero_content_textarea::placeholder{
         justify-content: center;
         background-color: transparent;
         transition: all ease-in-out 0.5s;
+        position: fixed;
+        
     }
 
     .hero_header_mobile_btn_close{
         transform: scale(1.4);
         align-items: end;
         opacity: 0;
-        position: absolute;
+        position: fixed;
     }
     
     .hero_header_mobile_container{
@@ -582,6 +596,13 @@ input::placeholder, .hero_content_textarea::placeholder{
 }
 
 /* PROJECT SECTION */
+
+.back_btn{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: none;
+}
 
 .project_section{
     background-color: blue;
