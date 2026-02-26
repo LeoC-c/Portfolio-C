@@ -597,20 +597,20 @@ input::placeholder, .hero_content_textarea::placeholder{
 
 /* PROJECT SECTION */
 
-/*REMAKE THE INTIRE BACK_BTN*/
-.teste{
-    margin-top: 74Vh;
-   position: absolute;
+.btn_{
+    width: 70px;
+    height: 70px;
+    border: none;
+    animation: popin 2s forwards;
+    
 }
 
-.back_btn{
-    width:70px; 
-    height:70px;    
+.back_btn{   
     display: block;
-    float:right;
     border: none;
-    position: fixed;
-    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    position: absolute;
 }
 
 .project_section{
@@ -624,5 +624,12 @@ input::placeholder, .hero_content_textarea::placeholder{
 
 .project_container{
     background-color: orange;
-    
+    position: relative;
+}
+
+/* ANIMATION BACK_BTN */
+
+@keyframes popin {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
 }
