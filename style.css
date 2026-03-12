@@ -602,7 +602,8 @@ input::placeholder, .hero_content_textarea::placeholder{
     height: 70px;
     border: none;
     animation: popin 2s forwards;
-    
+    position: relative;
+    z-index: 100;
 }
 
 .back_btn{   
